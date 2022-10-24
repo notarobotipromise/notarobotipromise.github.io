@@ -1,0 +1,73 @@
+body { background: black;
+  /* background: background: rgb(22,31,69);
+background: radial-gradient(circle, rgba(22,31,69,1) 0%, rgba(0,2,11,1) 100%);
+*/ }
+
+  img {width: 100%;
+  position: absolute;
+  z-index: 0;}
+
+p {color: white;
+  text-align: left-justify;
+  position: absolute; 
+  margin-top: 130%;
+  margin-right: 10%;
+  left: 5%;
+  opacity: 20%;
+  font-family: 'Inconsolata', monospace;font-size: 4vw; font-weight: 200;}
+ 
+ h2 { color: white; 
+  text-align: center;
+  margin-top: 43%;
+  left: 55%;
+  position: absolute;
+  z-index: 3;
+  font-weight: 200;
+
+font-family: 'Inconsolata', monospace;font-size: 10vw;
+
+  animation: pulsate 0.11s ease-in-out infinite alternate;
+    color: white;}
+
+
+  h1 { color: white; 
+  text-align: justify-all;
+  margin-top: 55%;
+  left: 15%;
+  position: absolute;
+  z-index: 3;
+  font-weight: 200;
+
+font-family: 'Inconsolata', monospace; font-size: 10vw;
+
+  animation: pulsate 0.11s ease-in-out infinite alternate;
+    color: white;}
+
+
+@keyframes pulsate {
+  100%{
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #f09,
+      0 0 80px #f09,
+      0 0 90px #f09,
+      0 0 100px #f09,
+      0 0 150px #f09;
+  
+  }
+  
+  0% {
+
+    text-shadow:
+    0 0 4px #fff,
+    0 0 10px #fff,
+    0 0 18px #fff,
+    0 0 38px #f09,
+    0 0 73px #f09,
+    0 0 80px #f09,
+    0 0 94px #f09,
+    0 0 140px #f09;
+}
