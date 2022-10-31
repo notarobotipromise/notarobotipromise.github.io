@@ -1,7 +1,20 @@
-body { background: black;
-  /* background: background: rgb(22,31,69);
-background: radial-gradient(circle, rgba(22,31,69,1) 0%, rgba(0,2,11,1) 100%);
-*/ }
+body { background: black;}
+
+div.gallery {
+  margin: 5px;
+  margin-top: 100px;
+  border: 1px solid #ccc;
+  width: 180px;
+  padding: 20px;
+
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+
+
 
   img {width: 100%;
   position: absolute;
@@ -29,6 +42,7 @@ font-family: 'Inconsolata', monospace;font-size: 10vw;
   animation: pulsate 0.11s ease-in-out infinite alternate;
     color: white;}
 
+a:hover{font-weight: bold;}
 
   h1 { color: white; 
   text-align: justify-all;
