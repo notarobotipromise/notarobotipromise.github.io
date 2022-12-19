@@ -83,3 +83,22 @@ h1:hover {opacity: 100%;}
  
 
   .container:hover .overlay {opacity: 1;} */
+
+
+  h2 a:link,    h2 a:visited {
+  background-color: white;
+  color: cornflowerblue;
+  opacity: 100%;
+  border-radius: 5px;
+  padding: 2vw;
+  margin: 2vw;
+  text-align: center; 
+  text-decoration: none;
+  z-index: 3;
+  box-shadow: 1px 1px 30px crimson;
+
+}
+
+
+
+  }

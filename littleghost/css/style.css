@@ -1,0 +1,907 @@
+/* Stylesheet for Little Ghost
+
+******Colors*****
+White
+Pink: #E7A8CF
+Yellow: #F5F599
+Dark Blue: #4D5FA6
+Peach: #E8C3AF
+Contrast button color #D8F8EE
+
+
+Cubano for tile and headers
+Monteserrat for body text
+
+
+
+
+
+/* This section is for universal selections and rules */
+
+/* box model Fix */
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* clear Fix */
+
+.row:before,
+.row:after {
+	content: " ";
+	display: table;
+}
+
+.row:after {
+	clear: both;
+}
+
+.row>*{
+	padding: 0; 
+	--bs-gutter-x:0;
+}
+
+.row{
+ --bs-gutter-x:0;
+}
+
+.container-fluid{
+ --bs-gutter-x:0;
+}
+
+/* image rules*/ 
+
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
+video {
+	width: 100%;
+}
+
+/* Type Hierarchy */
+
+
+@font-face {
+	font-family: cubano, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: montserrat, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+body {
+	background-color: #4D5FA6;
+}
+
+h1 {
+	font-family: "cubano";
+	text-align: center;
+	color: white;
+	padding: 8vh;
+}
+
+@media (min-width: 0px) {
+  h1 { font-size: 5rem; }
+}
+
+@media (min-width: 400px) {
+  h1 { font-size: calc( 5rem + 1vw); }
+}
+
+@media (min-width: 1001px){
+  h1 { font-size: 10rem; }
+}
+
+
+
+h2 {
+	font-family: "cubano";
+	color: #4D5FA6;
+}
+
+@media (min-width: 0px) {
+  h2 { font-size: 2.5rem;
+  	line-height: 2.6rem}
+}
+
+@media (min-width: 400px) {
+  h2 {font-size: calc(2.5rem + 1vw);}
+}
+
+@media (min-width: 1001px){
+  h2 { font-size: 4rem;
+    	line-height: 4rem}
+}
+
+
+
+h3 {
+	font-family: 'cubano', sans-serif;
+	font-weight: 400;
+	line-height: 2.5rem;
+	margin: 0;
+}
+
+@media (min-width: 0px) {
+  h3 { font-size: 1.2em;}
+}
+
+@media (min-width: 400px) {
+  h3 { font-size: calc(1.2em + 1vw); 
+  	line-height: 2rem}
+}
+
+@media (min-width: 1001px){
+  h3 { font-size:2em; }
+}
+
+
+
+h4 {
+	font-family: "montserrat";
+	font-weight: bold;
+	padding: 20px 0 0 0;
+	color: #4D5FA6;
+
+}
+
+@media (min-width: 0px) {
+  h4 { font-size: 1.5rem;}
+}
+
+@media (min-width: 400px) {
+  h4 { font-size: calc(1.5rem + 1vw); }
+}
+
+@media (min-width: 1001px){
+  h4 { font-size: 2rem; }
+}
+/* 
+h5 {
+	font-family: 'Poppins';
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 1.8rem;
+}
+*/
+
+p {
+
+	font-family: 'montserrant', sans-serif;
+	font-style: normal;
+	font-size: 2em;
+	font-weight: 300;
+	line-height: 1.2em;
+	margin: 0;
+	color: #4D5FA6;
+}
+
+/*https://codepen.io/hubspot/pen/RwpEBgK*/
+@media (min-width: 0px) {
+  p { font-size: 1rem;
+  }
+}
+
+@media (min-width: 400px) {
+  p { font-size: calc(1rem + 1vw); }
+}
+
+@media (min-width: 1001px){
+  p { font-size: 2rem; }
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover {
+
+}
+
+ul {
+	list-style-type: none;
+}
+
+/* chonkie chonks */
+
+.xl-chunk{
+height: 1080px;
+}
+
+.xl-chunk p {
+	color:#fff;
+
+}
+
+.lrg-chunk{
+	background-color: #F5F599;
+		height: 750px;
+		text-align: center;
+		padding: 2vw 10vw 0 10vw;
+}
+
+
+.med-chunk{
+	background-image: url("../image/srib-01.png");
+background-position: 60% 20%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-color: #F5F599;
+	height: 550px;
+}
+
+.med-chunk img{
+ height: 550px;
+ object-position: center;
+ object-fit: cover;
+}
+
+
+.sml-chunk{
+	background-color: #F5F599;
+	text-align: center;
+	height: 300px;
+	padding: 5%;
+
+}
+
+
+.col-md-4 img{
+	height: 100%;
+}
+
+@media (max-width: 48em) {
+.xl-chunk{
+		height: auto;
+	}
+.lrg-chunk{
+		height: auto;
+				padding: 10vh 0vw 10vh 0vw;}
+.med-chunk{
+		height: auto;}
+.sml-chunk{
+			padding: 10vh 0vw 10vh 0vw;
+		height: auto;}
+
+
+}
+
+
+
+
+/*Decorative Bric-a-brac **************/
+.extra-space{
+	padding:  5vw 10vw 5vw 10vw;
+}
+
+
+.pinkborder{
+	border-style: solid;
+	border-color: #E7A8CF ;
+  border-width: 0px 0 30px 0;
+}
+
+
+.square img{
+	background-color: red;
+	height: 25vw;
+	width: 25vw;
+	content: cover;
+
+}
+
+
+
+
+#buttfix{
+	margin: 0 0 40px 0;
+}
+
+
+
+.CTA-button{
+	z-index: 2;
+	background-color: #D8F8EE;
+	font-family: 'cubano', sans-serif;
+	font-size: 2em;
+	color: #4D5FA6;
+	padding: .5em;
+	border-radius: 2em;
+	text-align: center;
+	width: 20%;
+	margin-top: 6em;
+}
+
+
+@media (max-width: 48em) {
+
+	.pinkborder{
+		border-style: solid;
+		border-color: #E7A8CF ;
+	  border-width: 0px 0 15px 0;
+	}
+
+
+}
+
+
+
+
+
+
+
+/* Form*****************/
+
+.form-floating{
+ margin: 3vw 0 80px 0;
+}
+
+#floatingTextarea{
+	height: 400px;
+	width: 90%;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #E7A8CF;
+	border-radius: 20px;
+	background-color:rgba(77, 95, 166, .1);
+	font-size: 2em;
+	margin: 0 0 3vw 0;
+	padding: 10px 0px 20px 10px;
+}
+
+
+#floatingInput{
+	height: 80px;
+	width: 90%;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #E7A8CF;
+	border-radius: 20px;
+	background-color:rgba(77, 95, 166, .1);
+	font-size: 2em;
+	margin: 0 0 3vw 0;
+	padding: 10px 0px 20px 20px;
+}
+
+
+label {
+	margin:10px;
+	font-family:"montserrat";
+	font-size: 1.2em;
+	color: #4D5FA6;
+}
+
+
+/* header styles and rules
+
+https://codepen.io/mutedblues/pen/MmPNPG
+ */
+
+
+.header {
+
+	background-color: #F5F599;
+	
+	font-family: montserrat, sans-serif;
+	font-weight: 300px;
+	font-style: normal;
+	font-size: 1rem;
+
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+}
+  
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #F5F599;
+  font-size: 1.5rem;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  text-decoration: none; 
+  color: #4D5FA6;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+ background-color: #D8F8EE;
+
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  padding: 10px 10px;
+  text-decoration: none;
+  width: 30vw;
+  max-width: 110px;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 32px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #4D5FA6;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #4D5FA6;
+  content:"";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 500px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+/* 48em = 768px */
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+   .header .menu-icon {
+    display: none;
+  }
+
+}
+
+
+
+
+a.CTA {
+	position: sticky;
+	top:0;
+	background-color: #D8F8EE;
+	font-family: 'montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	color: #fff;
+	padding: 1em 2.5em;
+	border-radius: 2em;
+}
+
+
+
+
+/* Footer styles and rules */
+
+footer {
+	background-color: #F5F599;
+	color: #4D5FA6;
+	position: relative;
+	z-index: 4;
+	height: 300px;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+footer p{
+	font-size: 1.6em;
+	padding: 1vw;
+}
+
+#cups{
+ background-image: url(../image/footer.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ height: 140px;
+ 	display: flex;
+	flex-direction: row;
+}
+
+#socials {
+	padding-top: 3.5vw;
+	padding-right: 7vw;
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+}
+#anditwascalledyellow{
+ display: flex;
+	flex-direction: row;
+	height: 200px;
+	margin: 0  -1vw -1vw 0 ;
+	background-color: #F5F599;
+}
+
+#socials img {
+	padding: 1vw;
+	max-width: 150px;
+
+}
+
+#legal p{
+	text-align: center;
+	padding: 2vw;
+	color:#E7A8CF;
+}
+
+/* unique */
+
+
+/*homepage*******************************************************************/
+
+/* hero */
+
+#splash img{
+	z-index: 1;
+	position: relative;
+	margin: -74vw 0 -300px 0;
+	width: 57vw;
+	object-fit: scale-down;
+}
+
+
+/* scroll arrow https://codepen.io/tommybickerdike/pen/wMdvpQ */
+
+.arrow {
+	margin:-1vh;
+ display: block;
+}
+
+@media (min-height: 1200px),(max-width: 60em) {
+	.arrow {
+	display: none;
+	}
+}
+.arrow::before {
+  animation: bounce 1s ease infinite;
+  bottom: 6rem;
+  color: #fff;
+  content: '╲╱';
+  font-size: 3rem;
+  font-weight: 900;
+  height: 4rem;
+  left: 50%;
+  letter-spacing: -1px;
+  line-height: 4rem;
+  margin-left: -3rem;
+  opacity: 0.8;
+  position: absolute;
+  text-align: center;
+  width: 6rem;
+  text-shadow: 1px 0 10px #fff, 1px 0 20px #F5F599;
+}
+
+@keyframes bounce {
+  50% {
+    transform: translateY(-50%);
+  }
+}
+
+
+/* experience */
+
+ol {
+    list-style: none;
+    counter-reset: num;
+    padding: 0 5vw 0 5vw;
+}
+
+
+ol li::before {
+    content: "0" counter(num);
+    font-weight: bold;
+    color: #E8C3AF;
+    font-family: "Cubano", sans-serif;
+    font-size: 2em;
+}
+
+
+#experience li {
+	color: #F5F599;
+	font-family: "Cubano", sans-serif;
+  font-size: 3em;
+  counter-increment: num;
+}
+
+
+#experience h2 {
+	font-size: 5em;
+	color:#E7A8CF;
+	padding-bottom: 2vw;
+	padding-left: -10vw;
+}
+
+
+#experience p{
+	color: #fff;
+	margin: -1.5vw 0vw 3vw 3vw; 
+}
+
+#roasters-index img {
+	height: 300px;
+	width: 300px;
+}
+
+
+#instagram{
+	background-color: #4D5FA6;
+}
+
+#instagram img{
+ border-radius: 20px;
+ border-style: solid;
+ border-color: #E7A8CF;
+ border-width: 10px;
+}
+
+#instagram h2{
+ color: #E7A8CF;
+}
+
+
+
+
+/*about***************************************/
+
+/*hero*/
+#story{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+#story img{
+	width: 100%;
+	height: auto;
+}
+
+/*founders*/
+
+
+#founders h2{
+	color: #F5F599;
+}
+
+#founders h3{
+	color: #E7A8CF;
+}
+
+#founders p{
+	color: white;
+}
+
+
+/*Cafe Discription*/
+
+#diss{
+	padding: 0vw 9vw 0vw 9vw;
+	color: #4D5FA6;
+	margin: auto;
+  width: 50%;
+}
+
+/*Vision, Mission, Values*/
+#vmv{
+	background-image: url(../image/expresso-left.png),
+							 url(../image/expresso-right.png);
+	background-repeat: no-repeat;
+	background-size:35%;
+	background-position: left, right;
+
+	color: white;
+	text-align: center;
+	height:1200px;
+	padding: 9vw 0vw 9vw 0vw;
+}
+
+#vmv p{
+	color: #fff;
+}
+
+#vmv h2{
+	color: #E7A8CF;
+}
+
+.card{
+margin: 5vw 0vw 0vw 0vw;
+border-radius: 20px;
+padding: 5vw;
+
+}
+
+
+/*Contact*/
+
+
+
+.card a{margin: 0;
+
+}
+
+
+/*menu*********************************************/
+
+
+
+/*mobile*********************************************/
+
+@media (max-width: 48em) {
+
+
+
+
+		/*>@>@>@>@>@index https://thoughtbot.com/blog/css-animation-for-beginners >@>@>@>@>@>@>*/
+
+	#splash img{
+		 animation: bouncein 1s;
+		margin: -220vw 0 0 0;
+		width: 100vw;}
+
+		@keyframes bouncein {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+		
+
+
+		#hero{
+  height: 80vh;
+	overflow: hidden;}
+
+		.back-video{
+		background-image: url(../image/cups-still.png);
+		background-repeat:no-repeat;
+		background-position: center;
+		background-size: 500%;%;
+	  object-fit: cover;
+		height: 100vh;}
+
+
+		#herovideo {
+			display: none;
+		}
+
+	#experience ol{
+		   margin: 0;
+		}
+
+	#experience h2 {
+		font-size: 4em;
+		line-height: 1em}
+
+	#experience p {
+		margin: -20px 0 40px 0;}
+	
+	#experience img{
+		display: none;}
+
+		#instagram img{
+	 border-radius: 0px;
+	 border-style: solid;
+	 border-color: #E7A8CF;
+	 border-width: 2px 0 2px 0;
+	 width: 100%;
+	 height: 30vh;
+	}
+
+		/*>@>@>@>@>@about>@>@>@>@>@>@>*/
+
+			/*Vision, Mission, Values*/
+			#vmv{
+				background-image: none;
+				padding: 5vh 0vw 5vh 0vw;
+				height: 70vh;
+			}
+
+			#diss {
+			 padding: 5vh 3vh 5vh 3vh;
+			 margin:  auto;
+			 width: 100%;
+			 text-align: center;
+			}
+
+
+
+	/*>@>@>@>@>@menu>@>@>@>@>@>@>*/
+
+.extra-space{
+	padding:5vw;
+}
+
+	/*footer*/
+
+	#socials img{
+		background-color: red;
+		padding: 1vw;
+		width: 50px;
+	}
+
+}
+
+
+
